@@ -27,7 +27,7 @@ body {
 /* CARD */
 .card {
     width: min(92vw, 320px);
-    height: 550px;
+    
     padding: 36px 28px;
     border-radius: 28px;
     background: rgba(255,255,255,0.08);
@@ -40,8 +40,8 @@ body {
 }
 /* AVATAR */
 .avatar {
-    width: 240px;
-    height: 240px;
+    width: min(60vw, 240px);
+    height: min(60vw, 240px);
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid rgba(255,255,255,0.8);
@@ -126,7 +126,12 @@ body {
 /* MOBILE */
 @media (max-width: 420px) {
     .card {
+        width: 92vw;
         padding: 26px 18px;
+    }
+    .avatar {
+        width: 180px;
+        height: 180px;
     }
     .social-btn {
         width: 100%;
